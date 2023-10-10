@@ -17,4 +17,4 @@ loader = TextLoader("./data/data.txt")
 index = ''
 index = VectorstoreIndexCreator().from_loaders([loader])
 
-print(index.query(query, llm=ChatOpenAI()))
+print(index.query(query))
